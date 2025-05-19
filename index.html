@@ -106,8 +106,25 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-16">
           <!-- Logo -->
-          <div class="flex-shrink-0">
-            <a href="#" class="text-xl font-bold text-gray-900">Smart School</a>
+          <div class="flex-shrink-0 flex items-center">
+            <!-- Logo Image (visible always) -->
+            <img
+              src="https://ed-master.net/images/logo-icon-45w.png"
+              alt="Smart School Logo"
+              class="h-8 w-auto block sm:hidden"
+            />
+
+            <!-- Logo Image + Text (hidden on mobile) -->
+            <div class="hidden sm:flex items-center space-x-2">
+              <img
+                src="https://ed-master.net/images/logo-icon-45w.png"
+                alt="Smart School Logo"
+                class="h-8 w-auto"
+              />
+              <a href="#" class="text-xl font-bold text-gray-900"
+                >Smart School</a
+              >
+            </div>
           </div>
 
           <!-- Mobile Menu Button -->
@@ -189,32 +206,36 @@
             />
           </svg>
         </button>
-        <nav class="space-y-2">
+        <nav class="space-y-4">
           <a
             href="#"
-            class="block text-gray-900 hover:bg-gray-200 px-3 py-2 rounded-md text-base font-medium"
-            >Home</a
+            class="flex items-center text-gray-900 hover:text-blue-600 hover:bg-blue-50 px-3 py-2 rounded-md text-base font-medium transition"
           >
+            <i class="fa-solid fa-house mr-2"></i> Home
+          </a>
           <a
             href="#"
-            class="block text-gray-900 hover:bg-gray-200 px-3 py-2 rounded-md text-base font-medium"
-            >Features</a
+            class="flex items-center text-gray-900 hover:text-blue-600 hover:bg-blue-50 px-3 py-2 rounded-md text-base font-medium transition"
           >
+            <i class="fa-solid fa-cogs mr-2"></i> Features
+          </a>
           <a
             href="#"
-            class="block text-gray-900 hover:bg-gray-200 px-3 py-2 rounded-md text-base font-medium"
-            >Contact</a
+            class="flex items-center text-gray-900 hover:text-blue-600 hover:bg-blue-50 px-3 py-2 rounded-md text-base font-medium transition"
           >
+            <i class="fa-solid fa-phone-alt mr-2"></i> Contact
+          </a>
           <a
             href="#"
-            class="block text-gray-900 hover:bg-gray-200 px-3 py-2 rounded-md text-base font-medium"
-            >Onboarding</a
+            class="flex items-center text-gray-900 hover:text-blue-600 hover:bg-blue-50 px-3 py-2 rounded-md text-base font-medium transition"
           >
+            <i class="fa-solid fa-user-cog mr-2"></i> Onboarding
+          </a>
           <a
             href="#"
-            class="block text-white hover:bg-gray-200 px-3 py-2 rounded-md text-base font-medium bg-blue-600"
+            class="flex items-center text-gray-900 hover:text-white hover:bg-blue-600 px-3 py-2 rounded-md text-base font-medium transition"
           >
-            <i class="fa-solid fa-right-to-bracket"></i> Request Demo
+            <i class="fa-solid fa-right-to-bracket mr-2"></i> Request Demo
           </a>
         </nav>
       </div>
@@ -535,19 +556,14 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-white text-black py-12 mt-20 relative">
-      <!-- Wavy top line -->
-      <div
-        class="absolute top-0 left-0 w-full h-16 bg-wave-pattern bg-no-repeat bg-cover"
-      ></div>
-
+    <footer class="bg-white text-black py-12 mt-20">
       <div
         class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8"
       >
         <!-- Brand -->
         <div>
-          <h3 class="text-2xl font-bold text-gray-900 mb-4">Smart School</h3>
-          <p class="text-sm text-gray-600">
+          <h3 class="text-2xl font-bold mb-4">Smart School</h3>
+          <p class="text-sm">
             Empowering schools with smarter, more connected tools for modern
             education.
           </p>
@@ -555,49 +571,65 @@
 
         <!-- Navigation -->
         <div>
-          <h4 class="text-gray-900 font-semibold mb-3">Navigation</h4>
+          <h4 class="font-semibold mb-3">Navigation</h4>
           <ul class="space-y-2 text-sm">
-            <li><a href="#" class="hover:text-blue-500">Home</a></li>
-            <li><a href="#" class="hover:text-blue-500">Features</a></li>
-            <li><a href="#" class="hover:text-blue-500">Pricing</a></li>
-            <li><a href="#" class="hover:text-blue-500">Contact</a></li>
+            <li>
+              <a href="#" class="text-gray-800 hover:text-blue-600">Home</a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-800 hover:text-blue-600">Features</a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-800 hover:text-blue-600">Pricing</a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-800 hover:text-blue-600">Contact</a>
+            </li>
           </ul>
         </div>
 
         <!-- Legal -->
         <div>
-          <h4 class="text-gray-900 font-semibold mb-3">Legal</h4>
+          <h4 class="font-semibold mb-3">Legal</h4>
           <ul class="space-y-2 text-sm">
             <li>
-              <a href="#" class="hover:text-blue-500">Terms of Service</a>
+              <a href="#" class="text-gray-800 hover:text-blue-600"
+                >Terms of Service</a
+              >
             </li>
-            <li><a href="#" class="hover:text-blue-500">Privacy Policy</a></li>
-            <li><a href="#" class="hover:text-blue-500">Cookies</a></li>
+            <li>
+              <a href="#" class="text-gray-800 hover:text-blue-600"
+                >Privacy Policy</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-gray-800 hover:text-blue-600">Cookies</a>
+            </li>
           </ul>
         </div>
 
         <!-- Contact / Social -->
         <div>
-          <h4 class="text-gray-900 font-semibold mb-3">Get in Touch</h4>
-          <p class="text-sm mb-3 text-gray-600">
+          <h4 class="font-semibold mb-3">Get in Touch</h4>
+          <p class="text-sm mb-3">
             Email:
             <a
               href="mailto:info@smartschool.com"
-              class="text-blue-500 hover:text-gray-800"
+              class="text-blue-600 hover:text-blue-800"
               >info@smartschool.com</a
             >
           </p>
           <div class="flex space-x-4 text-lg mt-2">
-            <a href="#" class="hover:text-blue-500"
+            <a href="#" class="text-gray-800 hover:text-blue-600"
               ><i class="fa-brands fa-facebook-f"></i
             ></a>
-            <a href="#" class="hover:text-blue-500"
+            <a href="#" class="text-gray-800 hover:text-blue-600"
               ><i class="fa-brands fa-twitter"></i
             ></a>
-            <a href="#" class="hover:text-blue-500"
+            <a href="#" class="text-gray-800 hover:text-blue-600"
               ><i class="fa-brands fa-linkedin-in"></i
             ></a>
-            <a href="#" class="hover:text-blue-500"
+            <a href="#" class="text-gray-800 hover:text-blue-600"
               ><i class="fa-brands fa-instagram"></i
             ></a>
           </div>
@@ -608,43 +640,32 @@
       <div class="mt-12 text-center text-sm text-gray-500">
         &copy; <span id="year"></span> Smart School. All rights reserved.
       </div>
-
-      <!-- Wavy bottom line -->
-      <div
-        class="absolute bottom-0 left-0 w-full h-16 bg-wave-pattern-reversed bg-no-repeat bg-cover"
-      ></div>
-
-      <!-- Back to top button -->
+      <!-- Back to Top Button -->
       <button
-        id="backToTop"
-        class="fixed bottom-8 right-8 bg-blue-500 text-white p-3 rounded-full shadow-lg hover:bg-blue-600 transition"
+        id="back-to-top"
+        class="fixed bottom-6 right-6 p-4 bg-blue-600 text-white rounded-full shadow-md hover:bg-blue-700 transition-all"
       >
-        ↑
+        <i class="fa-solid fa-arrow-up"></i>
       </button>
     </footer>
 
     <!-- JS for back to top functionality -->
     <script>
-      // Set the current year in the footer
-      document.getElementById("year").textContent = new Date().getFullYear();
-
-      // Back to top button functionality
-      const backToTopBtn = document.getElementById("backToTop");
-
-      // Show the button when scrolled down
+      // Show back-to-top button when scrolling
       window.onscroll = function () {
+        let backToTopBtn = document.getElementById("back-to-top");
         if (
           document.body.scrollTop > 100 ||
           document.documentElement.scrollTop > 100
         ) {
-          backToTopBtn.style.display = "block";
+          backToTopBtn.style.opacity = 1;
         } else {
-          backToTopBtn.style.display = "none";
+          backToTopBtn.style.opacity = 0;
         }
       };
 
-      // Scroll smoothly to the top
-      backToTopBtn.onclick = function () {
+      // Scroll to top when clicking the button
+      document.getElementById("back-to-top").onclick = function () {
         window.scrollTo({ top: 0, behavior: "smooth" });
       };
     </script>
