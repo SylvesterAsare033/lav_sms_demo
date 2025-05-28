@@ -60,22 +60,22 @@ function fillBarsAndChangeImage() {
 fillBarsAndChangeImage(); // start carousel
 
 // Enhance smooth scrolling for anchor links
-if ('scrollBehavior' in document.documentElement.style) {
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      const targetId = this.getAttribute('href').slice(1);
+if ("scrollBehavior" in document.documentElement.style) {
+  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+    anchor.addEventListener("click", function (e) {
+      const targetId = this.getAttribute("href").slice(1);
       const target = document.getElementById(targetId);
       if (target) {
         e.preventDefault();
-        target.scrollIntoView({ behavior: 'smooth' });
+        target.scrollIntoView({ behavior: "smooth" });
       }
     });
   });
 }
 
 // Optimize page loading: Defer images offscreen (simple lazy loading)
-document.addEventListener('DOMContentLoaded', () => {
-  document.querySelectorAll('img[loading="lazy"]').forEach(img => {
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll('img[loading="lazy"]').forEach((img) => {
     if (img.dataset.src) {
       img.src = img.dataset.src;
     }
@@ -88,3 +88,25 @@ AOS.init({
   once: true,
 });
 
+// Back to Top Button functionality
+window.onscroll = function () {
+  let backToTopBtn = document.getElementById("back-to-top");
+  if (
+    document.body.scrollTop > 100 ||
+    document.documentElement.scrollTop > 100
+  ) {
+    backToTopBtn.style.opacity = 1;
+  } else {
+    backToTopBtn.style.opacity = 0;
+  }
+};
+
+document.getElementById("back-to-top").onclick = function () {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};
+
+// Auto-update year in footer
+const yearSpan = document.getElementById("year");
+if (yearSpan) {
+  yearSpan.textContent = new Date().getFullYear();
+}

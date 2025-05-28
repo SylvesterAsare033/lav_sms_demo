@@ -157,7 +157,7 @@
               >Home</a
             >
             <a
-              href="#"
+              href="./features.html"
               class="text-gray-900 hover:bg-blue-200 px-3 py-2 rounded-md text-sm font-medium"
               >Features</a
             >
@@ -214,7 +214,7 @@
             <i class="fa-solid fa-house mr-2"></i> Home
           </a>
           <a
-            href="#"
+            href="./features.html"
             class="flex items-center text-gray-900 hover:text-blue-600 hover:bg-blue-50 px-3 py-2 rounded-md text-base font-medium transition"
           >
             <i class="fa-solid fa-cogs mr-2"></i> Features
@@ -244,14 +244,18 @@
       <div class="px-4 py-4 border-t space-y-2">
         <a
           href="#"
-          class="block w-full text-center text-blue-600 border border-blue-600 rounded-md py-2 font-medium hover:bg-blue-50 transition"
-          > Contact Sales</a
+          class="block w-full text-center text-blue-600 border border-blue-600 rounded-md py-2 font-medium hover:bg-blue-50 transition flex items-center justify-center gap-2"
         >
+          <i class="fa-solid fa-handshake"></i>
+          Contact Sales
+        </a>
         <a
           href="#"
-          class="block w-full text-center text-gray-600 border border-gray-400 rounded-md py-2 font-medium hover:bg-gray-100 transition"
-          > Contact Support</a
+          class="block w-full text-center text-gray-600 border border-gray-400 rounded-md py-2 font-medium hover:bg-gray-100 transition flex items-center justify-center gap-2"
         >
+          <i class="fa-solid fa-headset"></i>
+          Contact Support
+        </a>
       </div>
     </div>
 
@@ -645,32 +649,6 @@
         <i class="fa-solid fa-arrow-up"></i>
       </button>
     </footer>
-
-    <!-- JS for back to top functionality -->
-    <script>
-      // Show back-to-top button when scrolling
-      window.onscroll = function () {
-        let backToTopBtn = document.getElementById("back-to-top");
-        if (
-          document.body.scrollTop > 100 ||
-          document.documentElement.scrollTop > 100
-        ) {
-          backToTopBtn.style.opacity = 1;
-        } else {
-          backToTopBtn.style.opacity = 0;
-        }
-      };
-
-      // Scroll to top when clicking the button
-      document.getElementById("back-to-top").onclick = function () {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-      };
-    </script>
-
-    <!-- JS to auto-update year -->
-    <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
 
     <!-- JavaScript -->
     <script src="main.js"></script>

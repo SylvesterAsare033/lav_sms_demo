@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Features | Smart School</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="bg-gray-50 text-gray-800 font-sans">
+    <!-- Navbar -->
+    <nav class="bg-white shadow fixed w-full z-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <!-- Logo -->
+          <div class="flex-shrink-0 flex items-center">
+            <!-- Logo Image (visible always) -->
+            <a href="../index.html"
+              ><img
+                src="https://ed-master.net/images/logo-icon-45w.png"
+                alt="Smart School Logo"
+                class="h-8 w-auto block sm:hidden"
+              />
+            </a>
+            <!-- Logo Image + Text (hidden on mobile) -->
+            <div class="hidden sm:flex items-center space-x-2">
+              <img
+                src="https://ed-master.net/images/logo-icon-45w.png"
+                alt="Smart School Logo"
+                class="h-8 w-auto"
+              />
+              <a href="../index.html" class="text-xl font-bold text-gray-900"
+                >Smart School</a
+              >
+            </div>
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <div class="sm:hidden">
+            <button
+              id="mobile-menu-button"
+              class="text-gray-900 hover:text-gray-600 focus:outline-none"
+            >
+              <svg
+                class="h-6 w-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <!-- Desktop Menu -->
+          <div class="hidden sm:flex space-x-4">
+            <a
+              href="#"
+              class="text-gray-900 hover:bg-blue-200 px-3 py-2 rounded-md text-sm font-medium"
+              >Home</a
+            >
+            <a
+              href="./features.html"
+              class="text-gray-900 hover:bg-blue-200 px-3 py-2 rounded-md text-sm font-medium"
+              >Features</a
+            >
+            <a
+              href="#"
+              class="text-gray-900 hover:bg-blue-200 px-3 py-2 rounded-md text-sm font-medium"
+              >Contact</a
+            >
+            <a
+              href="#"
+              class="text-gray-900 hover:bg-blue-200 px-3 py-2 rounded-md text-sm font-medium"
+              >Onboarding</a
+            >
+            <a
+              href="#"
+              class="text-white hover:bg-blue-800 px-3 py-2 rounded-md text-sm font-medium bg-blue-600"
+              ><i class="fa-solid fa-right-to-bracket"></i> Request Demo</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Sidebar Menu for Mobile -->
+    <div
+      id="sidebar"
+      class="fixed inset-y-0 left-0 w-64 bg-white shadow-lg transform -translate-x-full transition-transform duration-300 z-30 flex flex-col justify-between"
+    >
+      <!-- Top Menu Content -->
+      <div class="px-4 py-5">
+        <button
+          id="close-sidebar"
+          class="mb-5 text-gray-600 hover:text-gray-900 focus:outline-none"
+        >
+          <svg
+            class="h-6 w-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+        <nav class="space-y-4">
+          <a
+            href="#"
+            class="flex items-center text-gray-900 hover:text-blue-600 hover:bg-blue-50 px-3 py-2 rounded-md text-base font-medium transition"
+          >
+            <i class="fa-solid fa-house mr-2"></i> Home
+          </a>
+          <a
+            href="./features.html"
+            class="flex items-center text-gray-900 hover:text-blue-600 hover:bg-blue-50 px-3 py-2 rounded-md text-base font-medium transition"
+          >
+            <i class="fa-solid fa-cogs mr-2"></i> Features
+          </a>
+          <a
+            href="#"
+            class="flex items-center text-gray-900 hover:text-blue-600 hover:bg-blue-50 px-3 py-2 rounded-md text-base font-medium transition"
+          >
+            <i class="fa-solid fa-phone-alt mr-2"></i> Contact
+          </a>
+          <a
+            href="#"
+            class="flex items-center text-gray-900 hover:text-blue-600 hover:bg-blue-50 px-3 py-2 rounded-md text-base font-medium transition"
+          >
+            <i class="fa-solid fa-user-cog mr-2"></i> Onboarding
+          </a>
+          <a
+            href="#"
+            class="flex items-center text-gray-900 hover:text-white hover:bg-blue-600 px-3 py-2 rounded-md text-base font-medium transition"
+          >
+            <i class="fa-solid fa-right-to-bracket mr-2"></i> Request Demo
+          </a>
+        </nav>
+      </div>
+
+      <!-- Bottom Buttons -->
+      <div class="px-4 py-4 border-t space-y-2">
+        <a
+          href="#"
+          class="block w-full text-center text-blue-600 border border-blue-600 rounded-md py-2 font-medium hover:bg-blue-50 transition flex items-center justify-center gap-2"
+        >
+          <i class="fa-solid fa-handshake"></i>
+          Contact Sales
+        </a>
+        <a
+          href="#"
+          class="block w-full text-center text-gray-600 border border-gray-400 rounded-md py-2 font-medium hover:bg-gray-100 transition flex items-center justify-center gap-2"
+        >
+          <i class="fa-solid fa-headset"></i>
+          Contact Support
+        </a>
+      </div>
+    </div>
+
+    <!-- Overlay -->
+    <div
+      id="overlay"
+      class="fixed inset-0 bg-black bg-opacity-30 hidden z-20"
+    ></div>
+    <script src="../main.js"></script>
+    <!-- Hero Section -->
+    <section class="bg-white py-16 px-4 text-center">
+      <h2 class="text-4xl font-bold mb-4 text-gray-900">
+        Powerful Features for Smarter School Management
+      </h2>
+      <p class="text-gray-600 max-w-2xl mx-auto">
+        Simplify your administrative tasks, enhance communication, and elevate
+        the learning experience with EduTrack’s comprehensive features.
+      </p>
+    </section>
+
+    <!-- Features Grid -->
+    <section class="py-20 bg-gray-100 px-4">
+      <div
+        class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10"
+      >
+        <!-- Feature Card -->
+        <div
+          class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition"
+        >
+          <img
+            src="https://placehold.co/400"
+            alt="Student Info Screenshot"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-6 text-center">
+            <div class="text-blue-600 text-3xl mb-3">
+              <i class="fas fa-user-graduate"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Student Information</h3>
+            <p class="text-gray-600">
+              Manage student records, grades, attendance, and profiles with ease
+              and accuracy.
+            </p>
+            <a
+              href="/features/students.html"
+              class="mt-4 inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
+              >Learn More</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition"
+        >
+          <img
+            src="https://placehold.co/400"
+            alt="Teacher Dashboard Screenshot"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-6 text-center">
+            <div class="text-green-500 text-3xl mb-3">
+              <i class="fas fa-chalkboard-teacher"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Teacher Dashboard</h3>
+            <p class="text-gray-600">
+              Equip educators with tools to track classes, assignments, and
+              student progress.
+            </p>
+            <a
+              href="/features/teachers.html"
+              class="mt-4 inline-block bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition"
+              >Learn More</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition"
+        >
+          <img
+            src="https://placehold.co/400"
+            alt="Parent Communication Screenshot"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-6 text-center">
+            <div class="text-red-500 text-3xl mb-3">
+              <i class="fas fa-comments"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Parent Communication</h3>
+            <p class="text-gray-600">
+              Keep parents in the loop with real-time updates, messaging, and
+              performance reports.
+            </p>
+            <a
+              href="/features/parents.html"
+              class="mt-4 inline-block bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 transition"
+              >Learn More</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition"
+        >
+          <img
+            src="https://placehold.co/400"
+            alt="Parent Communication Screenshot"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-6 text-center">
+            <div class="text-red-500 text-3xl mb-3">
+              <i class="fas fa-comments"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Parent Communication</h3>
+            <p class="text-gray-600">
+              Keep parents in the loop with real-time updates, messaging, and
+              performance reports.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition"
+        >
+          <img
+            src="https://placehold.co/400"
+            alt="Fee Management Screenshot"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-6 text-center">
+            <div class="text-yellow-500 text-3xl mb-3">
+              <i class="fas fa-credit-card"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Fee Management</h3>
+            <p class="text-gray-600">
+              Automate fee collection, send reminders, and generate receipts
+              efficiently.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition"
+        >
+          <img
+            src="https://placehold.co/400"
+            alt="Analytics Screenshot"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-6 text-center">
+            <div class="text-indigo-500 text-3xl mb-3">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Reports & Analytics</h3>
+            <p class="text-gray-600">
+              Gain insights from detailed reports on attendance, academics, and
+              finances.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="bg-blue-700 text-white text-center py-12 px-4">
+      <h3 class="text-2xl font-bold mb-4">
+        Ready to simplify school management?
+      </h3>
+      <p class="mb-6">Try EduTrack free for 14 days and see the difference.</p>
+      <a
+        href="#"
+        class="inline-block bg-white text-blue-700 font-semibold px-6 py-3 rounded hover:bg-gray-100 transition"
+        >Get Started</a
+      >
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white text-black py-12 mt-20">
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8"
+      >
+        <!-- Brand -->
+        <div>
+          <h3 class="text-2xl font-bold mb-4">Smart School</h3>
+          <p class="text-sm">
+            Empowering schools with smarter, more connected tools for modern
+            education.
+          </p>
+        </div>
+
+        <!-- Navigation -->
+        <div>
+          <h4 class="font-semibold mb-3">Navigation</h4>
+          <ul class="space-y-2 text-sm">
+            <li>
+              <a href="#" class="text-gray-800 hover:text-blue-600">Home</a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-800 hover:text-blue-600">Features</a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-800 hover:text-blue-600">Pricing</a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-800 hover:text-blue-600">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Legal -->
+        <div>
+          <h4 class="font-semibold mb-3">Legal</h4>
+          <ul class="space-y-2 text-sm">
+            <li>
+              <a href="#" class="text-gray-800 hover:text-blue-600"
+                >Terms of Service</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-gray-800 hover:text-blue-600"
+                >Privacy Policy</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-gray-800 hover:text-blue-600">Cookies</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contact / Social -->
+        <div>
+          <h4 class="font-semibold mb-3">Get in Touch</h4>
+          <p class="text-sm mb-3">
+            Email:
+            <a
+              href="mailto:info@smartschool.com"
+              class="text-blue-600 hover:text-blue-800"
+              >info@smartschool.com</a
+            >
+          </p>
+          <div class="flex space-x-4 text-lg mt-2">
+            <a href="#" class="text-gray-800 hover:text-blue-600"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a href="#" class="text-gray-800 hover:text-blue-600"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+            <a href="#" class="text-gray-800 hover:text-blue-600"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+            <a href="#" class="text-gray-800 hover:text-blue-600"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom line -->
+      <div class="mt-12 text-center text-sm text-gray-500">
+        &copy; <span id="year"></span> Smart School. All rights reserved.
+      </div>
+      <!-- Back to Top Button -->
+      <button
+        id="back-to-top"
+        class="fixed bottom-6 right-6 p-4 bg-blue-600 text-white rounded-full shadow-md hover:bg-blue-700 transition-all"
+      >
+        <i class="fa-solid fa-arrow-up"></i>
+      </button>
+    </footer>
+  </body>
+</html>
