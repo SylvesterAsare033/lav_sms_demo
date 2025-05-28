@@ -22,83 +22,83 @@
   <body class="bg-gray-50 text-gray-800">
     <!-- Navbar -->
     <nav class="bg-white shadow fixed w-full z-20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="flex items-center justify-between h-16">
-            <!-- Logo -->
-            <div class="flex-shrink-0 flex items-center">
-              <!-- Logo Image (visible always) -->
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <!-- Logo -->
+          <div class="flex-shrink-0 flex items-center">
+            <!-- Logo Image (visible always) -->
+            <img
+              src="https://ed-master.net/images/logo-icon-45w.png"
+              alt="Smart School Logo"
+              class="h-8 w-auto block sm:hidden"
+            />
+
+            <!-- Logo Image + Text (hidden on mobile) -->
+            <div class="hidden sm:flex items-center space-x-2">
               <img
                 src="https://ed-master.net/images/logo-icon-45w.png"
                 alt="Smart School Logo"
-                class="h-8 w-auto block sm:hidden"
+                class="h-8 w-auto"
               />
-  
-              <!-- Logo Image + Text (hidden on mobile) -->
-              <div class="hidden sm:flex items-center space-x-2">
-                <img
-                  src="https://ed-master.net/images/logo-icon-45w.png"
-                  alt="Smart School Logo"
-                  class="h-8 w-auto"
-                />
-                <a href="#" class="text-xl font-bold text-gray-900"
-                  >Smart School</a
-                >
-              </div>
-            </div>
-  
-            <!-- Mobile Menu Button -->
-            <div class="sm:hidden">
-              <button
-                id="mobile-menu-button"
-                class="text-gray-900 hover:text-gray-600 focus:outline-none"
-              >
-                <svg
-                  class="h-6 w-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
-                </svg>
-              </button>
-            </div>
-  
-            <!-- Desktop Menu -->
-            <div class="hidden sm:flex space-x-4">
-              <a
-                href="#"
-                class="text-gray-900 hover:bg-blue-200 px-3 py-2 rounded-md text-sm font-medium"
-                >Home</a
-              >
-              <a
-                href="./features.html"
-                class="text-gray-900 hover:bg-blue-200 px-3 py-2 rounded-md text-sm font-medium"
-                >Features</a
-              >
-              <a
-                href="#"
-                class="text-gray-900 hover:bg-blue-200 px-3 py-2 rounded-md text-sm font-medium"
-                >Contact</a
-              >
-              <a
-                href="#"
-                class="text-gray-900 hover:bg-blue-200 px-3 py-2 rounded-md text-sm font-medium"
-                >Onboarding</a
-              >
-              <a
-                href="#"
-                class="text-white hover:bg-blue-800 px-3 py-2 rounded-md text-sm font-medium bg-blue-600"
-                ><i class="fa-solid fa-right-to-bracket"></i> Request Demo</a
+              <a href="#" class="text-xl font-bold text-gray-900"
+                >Smart School</a
               >
             </div>
           </div>
+
+          <!-- Mobile Menu Button -->
+          <div class="sm:hidden">
+            <button
+              id="mobile-menu-button"
+              class="text-gray-900 hover:text-gray-600 focus:outline-none"
+            >
+              <svg
+                class="h-6 w-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <!-- Desktop Menu -->
+          <div class="hidden sm:flex space-x-4">
+            <a
+              href="#"
+              class="text-gray-900 hover:bg-blue-200 px-3 py-2 rounded-md text-sm font-medium"
+              >Home</a
+            >
+            <a
+              href="./features.html"
+              class="text-gray-900 hover:bg-blue-200 px-3 py-2 rounded-md text-sm font-medium"
+              >Features</a
+            >
+            <a
+              href="#"
+              class="text-gray-900 hover:bg-blue-200 px-3 py-2 rounded-md text-sm font-medium"
+              >Contact</a
+            >
+            <a
+              href="#"
+              class="text-gray-900 hover:bg-blue-200 px-3 py-2 rounded-md text-sm font-medium"
+              >Onboarding</a
+            >
+            <a
+              href="#"
+              class="text-white hover:bg-blue-800 px-3 py-2 rounded-md text-sm font-medium bg-blue-600"
+              ><i class="fa-solid fa-right-to-bracket"></i> Request Demo</a
+            >
+          </div>
         </div>
-      </nav>
+      </div>
+    </nav>
 
     <!-- Sidebar Menu for Mobile -->
     <div
@@ -185,20 +185,19 @@
     ></div>
     <script src="../main.js"></script>
 
-    <!-- Breadcrumb -->
-    <div class="bg-gray-100 py-3 px-4 text-sm">
-      <div class="max-w-7xl mx-auto text-gray-600">
-        <a href="/" class="text-blue-600 hover:underline">Home</a> /
-        <a href="../features.html" class="text-blue-600 hover:underline"
-          >Features</a
-        >
-        /
-        <span class="text-gray-800 font-medium">Teacher Dashboard</span>
-      </div>
-    </div>
-
     <!-- Hero Section with Swiper Carousel -->
     <section class="bg-white py-16 px-4 text-center">
+      <!-- Breadcrumb -->
+      <div class="bg-gray-100 py-3 px-4 text-sm">
+        <div class="max-w-7xl mx-auto text-gray-600">
+          <a href="../index.html" class="text-blue-600 hover:underline">Home</a> /
+          <a href="../features.html" class="text-blue-600 hover:underline"
+            >Features</a
+          >
+          /
+          <span class="text-gray-800 font-medium">Teacher Dashboard</span>
+        </div>
+      </div>
       <div class="max-w-6xl mx-auto">
         <h2 class="text-4xl font-bold mb-6 text-gray-900">
           Empower Your Teachers
@@ -473,13 +472,14 @@
         },
       });
     </script>
-        <style>
-        .swiper-pagination-bullet-active{
-          background-color: #4ade80 !important; /* Tailwind green-400 */
-        }
-        .swiper-button-next, .swiper-button-prev {
-          color: #4ade80; /* Tailwind green-400 */
-        }
-        </style>
+    <style>
+      .swiper-pagination-bullet-active {
+        background-color: #4ade80 !important; /* Tailwind green-400 */
+      }
+      .swiper-button-next,
+      .swiper-button-prev {
+        color: #4ade80; /* Tailwind green-400 */
+      }
+    </style>
   </body>
 </html>
